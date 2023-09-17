@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(12, 12, 16);
+    transition: 0.3s;
+}
+
+nav .logo a:hover {
+    color: rgb(131, 164, 175);
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: rgb(43, 13, 188);
+    border-bottom-color: blue;
+    color: blue;
+}
+
+.section {
+    background-color: var(--extra-light);
+}
+
+.section__container {
+    min-height: 120vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.title span {
+    font-weight: 600;
+}
+
+.description {
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.action__btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.action__btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hire__me img {
+
+    color: #d57676;
+    width: 50px;
+    height: 50px;
+}
+
+.hire__me:hover {
+    background-color: rgb(20, 20, 215);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+.portfolio img {
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+
+}
+
+.portfolio:hover {
+    background-color: rgb(123, 161, 144);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.image {
+    display: grid;
+    place-items: center;
+}
+
+.image img {
+    width: min(50rem, 100%);
+    border-radius: 200%;
+    width: 410px;
+    height: 390px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    /* Set the background color */
+    color: #fff;
+    /* Set the text color to white */
+    padding: 20px 0;
+    /* Add some padding to the top and bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.footer-logo img {
+    width: 80px;
+    /* Adjust the logo width as needed */
+    height: 30px;
+
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+    /* Add space between the links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    /* Set link color to white */
+}
+
+.footer-social {
+    margin-left: auto;
+    /* Push the social icons to the right */
+
+
+}
+
+.social-icon img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Style the copyright text at the bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
